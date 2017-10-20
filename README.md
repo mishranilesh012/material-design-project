@@ -1,4 +1,4 @@
-# material-design-project
+# materialize-css-project
 Solid Waste Management System
 
 #Home page
