@@ -13,20 +13,63 @@
        <!--Let browser know website is optimized for mobile-->
        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
+  <style>
+        .head {
+          font-family: 'Acme', sans-serif;
+          text-align: center;
+          font-size: 65px;
+        }
+  </style>
   <body>
+      <!--Navigation Bar-->
         <nav>
                 <div class="nav-wrapper teal darken-1">
-                  <a href="#" class="brand-logo">Logo</a>
+                  <a href="#" class="brand-logo">SWMS</a>
                   <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="#"><i class="material-icons left small">assignment_late</i>Awareness</a></li>
-                    <li><a href="#"><i class="material-icons left small">assignment</i>Complaint</a></li>
+                    <li class="active"><a href="#"><i class="material-icons left small">assignment</i>Complaint</a></li>
                     <li><a href="#"><i class="material-icons left small">directions_bus</i>Services Nearby</a></li>
                     <li><a href="#"><i class="material-icons left small">assignment_ind</i>Contact Us</a></li>
                     <li><a href="#"><i class="material-icons left small">accessibility</i>About Us</a></li>
                   </ul>
                 </div>
               </nav>
-  
+        <!--header-->
+        <h1 class="head">
+          Complaint Form
+        </h1>
+      <!--Form-->
+      <div class="row">
+          <form class="col s2"></form>
+          <form class="col s8">
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">Full Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Last Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="password" type="password" class="validate">
+                <label for="password">Password</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            
+          </form>
+        </div>
   </body>
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="js/jquery.js"></script>
