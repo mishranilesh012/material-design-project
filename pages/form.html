@@ -44,65 +44,59 @@
           Complaint Form
         </h1>
       <!--Form-->
-      <div class="row">
-          <form class="col s2"></form>
-          <form class="col s8">
-              <div class="row">
+        <div class="row">
+          <div class="col s2"></div>
+          <div class="col s8">
+            <form  method="post" action="send.php" enctype="multipart/form-data">
+            	<div class="row">
                   <div class="input-field col s12">
                     <i class="material-icons prefix">query_builder</i>
-                    <input id="date" type="text" class="datepicker">
+                    <input id="date" type="text" class="datepicker" name="date">
                     <label for="date">Date</label>
                   </div>
                 </div>
             <div class="row">
               <div class="input-field col s12">
                 <i class="material-icons prefix">account_circle</i>
-                <input id="first_name" type="text" class="validate">
+                <input id="first_name" type="text" class="validate" name="name">
                 <label for="first_name">Full Name</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
                   <i class="material-icons prefix">account_circle</i>
-                  <input id="email" type="email" class="validate">
+                  <input id="email" type="email" class="validate" name="email">
                   <label for="email" data-error="wrong" data-success="right">Email</label>
                </div>
             </div> 
-          </form>
-          </form>
-        </div>
-        <div class="row">
-          <div class="col s2"></div>
-          <div class="col s8">
-            <form action="#">
             <div class="row">
                 <div class="input-field col s12">
                   <i class="material-icons prefix">my_location</i>
-                  <input id="loc" type="text" class="validate">
+                  <input id="loc" type="text" class="validate" name="loc">
                   <label for="loc">Location</label>
                 </div>
               </div>
               <div class="file-field input-field col s12">
                   <div class="btn teal darken-1">
                     <span>File</span>
-                    <input type="file" multiple>
+                    <input type="file" name="attachment" multiple>
                   </div>
                   <div class="file-path-wrapper">
-                    <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                    <input class="file-path validate" type="text" placeholder="Upload one or more files" >
                 </div>
             </div>
             
             <div class="row">
               <div class="input-field col s12">
                 <i class="material-icons prefix">mode_edit</i>
-                <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                <textarea id="icon_prefix2" class="materialize-textarea" name="message"></textarea>
                 <label for="icon_prefix2">Message</label>
               </div>
             </div>
             <div class="row">
               <div class="col s4"></div>
               <div class="col s5">
-                <button class="btn waves-effect waves-light btn-large" type="submit" name="action">Submit
+                <button class="btn waves-effect waves-light btn-large" type="submit" name="submit">Submit
                     <i class="material-icons right">send</i>
                   </button>
                 </div>
