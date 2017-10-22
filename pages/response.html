@@ -22,8 +22,11 @@
                 text-align: center;
                 padding-top: 60px;
             }
-
-
+			h1 {
+				font-family: 'Acme', sans-serif;
+				text-align: center;
+				font-size: 60px;
+			}
         </style>
 
       <!--Let browser know website is optimized for mobile-->
@@ -77,26 +80,20 @@
                     <div class="row">
                             <div class="col s3"></div>
                             <div class="col s9">
+                            	<h1>Acknowledgement</h1>
                                     <div class="row">
-                                            <form class="col s12">
+                                            <form method="post" action="resp.php">
                                               <div class="row">
                                                 <div class="input-field col s11">
                                                     <i class="material-icons prefix medium">access_time</i>
-                                                  <input type="text" class="datepicker">
+                                                  <input type="text" class="datepicker" name="date">
                                                   <label for="date">Date</label>
                                                 </div>
                                               </div>
                                                 <div class="row">
-                                                <div class="input-field col s11">
-                                                   <i class="material-icons prefix medium">insert_chart</i>
-                                                  <input id="source" type="text" class="validate">
-                                                  <label for="source">Complaint ID</label>
-                                                </div>
-                                                </div>
-                                                <div class="row">
                                                   <div class="input-field col s11">
                                                       <i class="material-icons prefix medium">mode_comment</i>
-                                                      <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                                      <textarea id="textarea1" class="materialize-textarea" name="message"></textarea>
                                                       <label for="textarea1">Message</label>
                                                     </div>
                                                 </div>
@@ -104,22 +101,22 @@
                                                 <div class="row">
                                                   <div class="input-field col s11">
                                                     <i class="material-icons prefix medium">drafts</i>
-                                                    <input id="email" type="email" class="validate">
+                                                    <input id="email" type="email" class="validate" name="email">
                                                     <label for="email" data-error="wrong" data-success="right">Email</label>
                                                   </div>
                                                 </div>
 
-
-                                            </form>
-
-                                            <div class="row">
+											<div class="row">
                                               <div class="col s4"></div>
                                               <div class="col s4">
-                                               <button class="btn waves-effect waves-light btn-large" type="submit" name="action">Submit
+                                               <button class="btn waves-effect waves-light btn-large" type="submit" name="submit">Submit
                                                       <i class="material-icons right">send</i>
                                                 </button>
                                                 </div>
                                             </div>
+                                            </form>
+
+                                           
                             </div>
                         </div>
 
