@@ -1,23 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="fonts/font.css" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+   <link href="fonts/gfont.css" rel="stylesheet">
   <title>Servicest</title>
   <style>
         #map {
           height: 500px;
-          width: 100%;
+          width: 1250px;
+          margin-left: 50px;
+        }
+        .head {
+          font-family: 'Acme', sans-serif;
+          text-align: center;
+
         }
   </style>
 </head>
 <body>
+  <!--Navigation Bar-->
+    <nav>
+            <div class="nav-wrapper teal darken-1">
+              <a href="#" class="brand-logo">SWMS</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#"><i class="material-icons left small">assignment_late</i>Awareness</a></li>
+                <li><a href="#"><i class="material-icons left small">assignment</i>Complaint</a></li>
+                <li class="active"><a href="#"><i class="material-icons left small">directions_bus</i>Services Nearby</a></li>
+                <li><a href="#"><i class="material-icons left small">assignment_ind</i>Contact Us</a></li>
 
+              </ul>
+            </div>
+          </nav>
+          <!--header-->
+          <h1 class="head">
+            Services Nearby
+          </h1>
   <div id="map"></div>
   <script>
       function initMap() {
+          var options = {
+            zoom:8,
+            center:{lat:42.3601,lng:-71.0589}
+          }
 
+          var map = new google.maps.Map(document.getElementById('map'),options);
+          }
       }
   </script>
   <script async defer
