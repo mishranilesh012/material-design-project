@@ -10,12 +10,14 @@
   <style>
         #map {
           height: 500px;
-          width: 1250px;
-          margin-left: 50px
+          width: 100%;
+
         }
         .head {
           font-family: 'Acme', sans-serif;
           text-align: center;
+          padding-top: 40px;
+          padding-bottom: 40px;
 
         }
   </style>
@@ -23,7 +25,7 @@
 <body>
   <!--Navigation Bar-->
     <nav>
-            <div class="nav-wrapper teal darken-1">
+            <div class="nav-wrapper teal darken-1 z-depth-2">
               <a href="#" class="brand-logo">SWMS</a>
               <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#"><i class="material-icons left small">assignment_late</i>Awareness</a></li>
@@ -42,14 +44,134 @@
   <script>
       function initMap() {
           var options = {
-            zoom:8,
+            zoom:10,
             center:{lat:42.3601,lng:-71.0589}
           }
 
           var map = new google.maps.Map(document.getElementById('map'),options);
-          }
-      
+
+          //Add first marker
+          var marker = new google.maps.Marker({
+            position:{lat:42.3601,lng:-71.0589},
+            map:map
+          });
+
+          //Add second marker
+          var marker1 = new google.maps.Marker({
+            position:{lat:42.4668,lng:-70.9495},
+            map:map
+          });
+
+
+         //Add third marker
+          var marker2 = new google.maps.Marker({
+            position:{lat:42.3765,lng:-71.2356},
+            map:map
+          });
+
+          //Add fourth marker
+           var marker2 = new google.maps.Marker({
+             position:{lat:42.2793,lng:-71.4162},
+             map:map
+           });
+
+      }
+
   </script>
+<div class="container">
+  <!--header-->
+  <h1 class="head">
+    Details
+  </h1>
+
+  <!--Card 1-->
+  <div class="row">
+        <div class="col s12 m6">
+          <div class="card blue-grey darken-1 z-depth-2 hoverable">
+            <div class="card-content white-text">
+              <span class="card-title">Boston</span>
+                <h6>Service_provider = XYZ</h6>
+                <h6>E-mail:sample@gmail.com</h6>
+                <h6>Contact number:1234567890</h6>
+                <h6>Timing:8:00a.m-9:00p.m</h6>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!--card 2-->
+        <div class="col s12 m6">
+          <div class="card blue-grey darken-1 z-depth-2 hoverable">
+            <div class="card-content white-text">
+              <span class="card-title">Lynn</span>
+              <h6>Service_provider = ABC</h6>
+              <h6>E-mail:project@gmail.com</h6>
+              <h6>Contact number:1234567890</h6>
+              <h6>Timing:8:00a.m-9:00p.m</h6>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+          <!-- Card 3-->
+          <div class="row">
+                <div class="col s12 m6">
+                  <div class="card blue-grey darken-1 z-depth-2 hoverable">
+                    <div class="card-content white-text">
+                      <span class="card-title">Waltham</span>
+                      <h6>Service_provider = PQR</h6>
+                      <h6>E-mail:sproject@gmail.com</h6>
+                      <h6>Contact number:1234567890</h6>
+                      <h6>Timing:8:00a.m-9:00p.m</h6>
+
+                    </div>
+
+                  </div>
+                </div>
+
+                <!--card 4-->
+                <div class="col s12 m6">
+                  <div class="card blue-grey darken-1 z-depth-2 hoverable">
+                    <div class="card-content white-text">
+                      <span class="card-title">Framingham</span>
+                      <h6>Service_provider =RPS</h6>
+                      <h6>E-mail:spro123@gmail.com</h6>
+                      <h6>Contact number:1234567890</h6>
+                      <h6>Timing:8:00a.m-9:00p.m</h6>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+  </div>
+  <!--Footer-->
+  <footer class="page-footer teal">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="black-text">Mira Rd-Bhyandar Nagarpalika</h5>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="black-text">Social Media</h5>
+            <ul>
+              <li><a class="black-text text-lighten-3" href="#!">Facebook</a></li>
+              <li><a class="black-text text-lighten-3" href="#!">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container black-text">
+        © 2017 Copyright MBN
+        <a class="black-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
   <script async defer
    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV6teiRZ5gkEK4zDa489OgqETZfjEUi3E&callback=initMap">
    </script>
