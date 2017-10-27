@@ -29,9 +29,9 @@ try {
     $mail->setFrom('projectsample0@gmail.com', 'MNP-Gov');
 
     $mail->addAddress($email);     // Add a recipient
-    
 
-    $body = "<p><strong>You have received Complaint</strong>,<br><br> Date:-" . $date ."<br> Complaint ID:- ". $ran . " <br>Message:- ". $message ."</p>";
+
+    $body = "<p><strong>Acknowledgement</strong>,<br><br> Date:-" . $date ."<br> Complaint ID:- ". $ran . " <br>Message:- ". $message ."</p>";
 
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML

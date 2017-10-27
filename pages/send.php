@@ -33,8 +33,8 @@ try {
     //Recipients
     $mail->setFrom('projectsample0@gmail.com', 'MNP-Gov');
 
-    $mail->addAddress($email, $name);     // Add a recipient
-    
+    $mail->addAddress('nilmis85@gmail.com');     // Add a recipient
+
 
     $body = "<p><strong>You have received Complaint</strong>,<br><br> Date:-" . $date ."<br> Name:- ". $name . "<br>Email:- ". $email ."<br>Location:- ". $loc . " <br>Message:- ". $message ."</p>";
 
